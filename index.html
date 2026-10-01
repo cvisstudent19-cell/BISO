@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BISO — Bharat International Space Organisation">
+  <title>BISO | Bharat International Space Organisation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="BISO Home">
+      <span class="brand-mark">B</span>
+      <span><strong>BISO</strong><small>Bharat International Space Organisation</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav id="mainNav" class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="members.html">Members</a>
+      <a href="#missions">Missions</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="stars"></div>
+      <div class="hero-content">
+        <p class="eyebrow">BHARAT • SPACE • FUTURE</p>
+        <h1>Exploring Today.<br><span>Building Tomorrow.</span></h1>
+        <p class="hero-text">
+          Welcome to BISO — a student-created space organisation website focused on
+          exploration, science, technology and the future of space.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="members.html">Meet the Members →</a>
+          <a class="btn secondary" href="#missions">Explore Missions</a>
+        </div>
+      </div>
+      <div class="rocket" aria-hidden="true">🚀</div>
+    </section>
+
+    <section id="missions" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION CONTROL</p>
+        <h2>Our Space Missions</h2>
+        <p>Explore the fictional BISO mission programme created for this project.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🚀</div>
+          <h3>BISO-01</h3>
+          <p>Technology demonstration mission designed to test next-generation space systems.</p>
+          <span class="status active-status">● Active Project</span>
+        </article>
+
+        <article class="card">
+          <div class="icon">🛰️</div>
+          <h3>BISO-SAT</h3>
+          <p>Earth-observation concept focused on collecting useful information about our planet.</p>
+          <span class="status planned-status">● Planned</span>
+        </article>
+
+        <article class="card">
+          <div class="icon">🌙</div>
+          <h3>Lunar Quest</h3>
+          <p>A future concept exploring the Moon and learning more about lunar environments.</p>
+          <span class="status future-status">● Future Mission</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">ABOUT BISO</p>
+        <h2>A vision for the next generation.</h2>
+        <p>
+          BISO stands for <strong>Bharat International Space Organisation</strong>.
+          This website is a creative school/project concept showing how a modern
+          space organisation could present its missions, people and vision online.
+        </p>
+        <a class="text-link" href="members.html">View the BISO team →</a>
+      </div>
+      <div class="vision-box">
+        <span>✦</span>
+        <h3>Our Vision</h3>
+        <p>To inspire curiosity, scientific thinking and innovation through the exploration of space.</p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>06</strong><span>Team Members</span></div>
+      <div><strong>03</strong><span>Mission Concepts</span></div>
+      <div><strong>01</strong><span>Big Vision</span></div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION CONTROL</p>
+        <h2>Contact BISO</h2>
+        <p>Send a message through the demo form below.</p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <label>Name
+          <input id="name" type="text" placeholder="Your name" required>
+        </label>
+        <label>Email
+          <input id="email" type="email" placeholder="you@example.com" required>
+        </label>
+        <label>Message
+          <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send Message 🚀</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>BISO</strong> — Bharat International Space Organisation
+    </div>
+    <div>© <span id="year"></span> BISO Project</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
